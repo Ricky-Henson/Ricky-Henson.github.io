@@ -4,7 +4,7 @@
 <title> heading, color and alignments </title>
 <body>
 
-<h1 color:"blue" align="right">My First Heading</h1>
+<h1 style="color:blue;" align="right">My First Heading</h1>
 <p> This is my URL <br> https://github.com/Ricky-Henson/Ricky-Henson.github.io/blob/main/W4HW </p>
 </body>
 </html>
