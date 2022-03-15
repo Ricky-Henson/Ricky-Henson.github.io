@@ -3,30 +3,84 @@
   <head>
     <meta charset="utf-8">
     <style>
-      body {width: 100%; min-width: 600px; max-width: 960px;
-        margin: 0 auto; text-align: center;}
-      header {margin: 1%; background: #eaeaea;}
-      nav{margin: 1%; color: white; background: black;}
-      main{float: left; width:64%; height: 300px; margin: 1%;
-        background: aqua;}
-      aside{float:left; width:32%; height:300px; margin: 1%;
-        background: aqua;}
-      footer{clear:left; margin:1%; background:#eaeaea;}
+    /* Class a Vertical Nav Bar */
+      ul.a {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #555;
+      }
+
+      li.a a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+
+      li.a {
+        text-align: center;
+        border-bottom: 1px solid #555;
+      }
+
+      li.a:last-child {
+        border-bottom: none;
+      }
+
+      li.a a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      
+    /* Class a Horizontal Nav Bar */
+      ul.b {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li.b {
+        float: left;
+      }
+
+      li.b a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li.b a:hover {
+        background-color: #111;
+      }
+        
+        
     </style>
   </head>
   <body>
-    <header> <h1> Home Page (Header) </h1> </header>
     <nav> 
-      <h1> Nav </h1> 
-      <ul>
-        <li><a href="poem1.html">Poem1</a></li>
-        <li><a href="poem2.html">Poem2</a></li>
-        <li><a href="poem3.html">Poem3</a></li>
-      </ul>
-    
+      <h1> Vertical Navigation Bar </h1> 
+        <ul class="a">
+          <li class="a"><a href="#home">Home</a></li>
+          <li class="a"><a href="#news">News</a></li>
+          <li class="a"><a href="#contact">Contact</a></li>
+          <li class="a"><a href="#about">About</a></li>
+        </ul>
+        <br>
+      <h1> Horizontal Navigation Bar </h1> 
+        <ul class="b">
+          <li class="b"><a href="#home">Home</a></li>
+          <li class="b"><a href="#news">News</a></li>
+          <li class="b"><a href="#contact">Contact</a></li>
+          <li class="b"><a href="#about">About</a></li>
+        </ul>
+        
+        
     </nav>
-    <main> <h1> Contents (Main) </h1> </main>
-    <aside> <h1> Aside </h1> </aside>
-    <footer> <h1> Footer </h1> </footer>
   </body>
 </html>
