@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8 ">
+    <title>台灣美食 - Taiwan Food and Beverage</title>
+    <link rel="stylesheet " href="style.css ">
+    <!-- 2 links bottom to use Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@100;200;300;400;600;700&family=Raleway:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- To use icon -->
+    <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+
+</head>
+
+<body>
+    <section class="sub-header ">
+        <nav>
+            <a href="index.htm "><img src="imgF/logo.png "></a>
+            <div class="nav-links " id="navLinks ">
+                <i class="fa fa-times " onclick="hideMenu() "></i>
+                <ul>
+                    <li><a href="index.htm ">HOME</a></li>
+                    <li><a href="fb.htm ">FOODS & DRINKS</a></li>
+                    <li><a href="dest.htm ">DESTINATIONS</a></li>
+                    <li><a href="blog.htm ">BLOG</a></li>
+                    <li><a href="contact.htm ">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars " onclick="showMenu() "></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+
+    <!-- Contact Us -->
+    <section class="location ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58525.68865115502!2d120.40736179658968!3d23.537697631694265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e95f69f7f4d13%3A0xf517cf21cdba27aa!2sMinxiong%2C%20Minxiong%20Township%2C%20Chiayi%20County%2C%20621!5e0!3m2!1sen!2stw!4v1649095961999!5m2!1sen!2stw
+        " width="600 " height="450 " style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+    </section>
+
+    <section class="contact-us ">
+        <div class="row ">
+            <div class="contact-col ">
+                <div>
+                    <i class="fa fa-home "></i>
+                    <span>
+                    <h5>XYZ Road, ABC Building</h5>
+                    <p>Chiayi, Minxiong, TW</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o "></i>
+                    <span>
+                    <!-- Not using real email -->
+                    <h5>example@gmail.com</h5>
+                    <p>Email us for your query</p>
+                </span>
+                </div>
+            </div>
+            <div class="contact-col ">
+                <!-- <form action="form-handler.php " method="post "> -->
+                <form>
+                    <!-- name is for php file -->
+                    <input type="text " name="name " placeholder="Enter Your name " required>
+                    <input type="email " name="email " placeholder="Enter email address " required>
+                    <input type="text " name="subject " placeholder="Enter Your subject " required>
+                    <textarea rows="8 " name="message " placeholder="Message " required></textarea>
+                    <button type="submit " class="hero-btn red-btn ">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer ">
+        <h4>About Us</h4>
+        <p>The bullet pierced the window shattering it before missing Danny's head by mere millimeters. More RVs were seen in the <br> storage lot than at the campground. I am counting my calories, yet I really want dessert. It's always a good idea to seek
+            shelter from the evil gaze of the sun.</p>
+        <div class="icons ">
+            <i class="fa fa-facebook "></i>
+            <i class="fa fa-twitter "></i>
+            <i class="fa fa-instagram "></i>
+            <i class="fa fa-linkedin "></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o "></i> by Me</p>
+    </section>
+
+
+
+
+    <script>
+        var navLinkss = document.getElementById("navLinks ");
+
+        function showMenu() {
+            navLinkss.style.right = "0 ";
+        }
+
+        function hideMenu() {
+            navLinkss.style.right = "-200px ";
+        }
+    </script>
+
+</body>
+
+</html>
